@@ -1,0 +1,2 @@
+This is an O(|V|^2) solution where |V| is the number of verticies you can travel to.
+|V| is O(N)
