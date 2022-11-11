@@ -7,3 +7,5 @@ This repository is my solution for 2022 Meta Hacker Cup, in which I have qualifi
 | Qualification Round | 100/100 | 186th out of 27604 |
 | Round 1 | 40/100 | 1815th out of 12330 |
 | Round 2 | 10/100 | 1675th out of 5047 |
+
+Explanation of my code will be attached in the corresponding directory.
