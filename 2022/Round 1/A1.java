@@ -3,10 +3,7 @@ import java.io.*;
 
 public class A1 {
     public static void main(String[] args) throws IOException {
-        // TODO: Change the BufferedReader filename
         BufferedReader br = new BufferedReader(new FileReader("consecutive_cuts_chapter_1_input.txt"));
-        // BufferedReader br = new BufferedReader(new
-        // FileReader("consecutive_cuts_chapter_1_validation_input.txt"));
         PrintWriter pw = new PrintWriter(new FileWriter("A1_output.txt"));
         int T = Integer.parseInt(br.readLine());
 
@@ -25,6 +22,8 @@ public class A1 {
                 B[i] = Integer.parseInt(st2.nextToken());
                 idx[A[i]] = i;
             }
+
+            // check if A and B are circular
 
             int j = idx[B[0]];
             boolean valid = true;
