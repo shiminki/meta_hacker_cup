@@ -17,6 +17,8 @@ public class B2 {
                 field[i] = br.readLine().toCharArray();
                 for (int j = 0; j < C; j++) {
                     if (field[i][j] == '.') {
+                        // T = potential tree
+                        // set every empty space as a potential tree
                         field[i][j] = 'T';
                     }
                 }
@@ -26,13 +28,17 @@ public class B2 {
                 for (int j = 0; j < C; j++) {
                     if (field[i][j] == '^') {
                         int friendCnt = getFriendCnt(field, i, j);
+                        // if original tree has friend cnt < 2, grid is not valid
                         if (friendCnt < 2) {
                             valid = false;
                         }
                     } else if (field[i][j] == 'T') {
                         int friendCnt = getFriendCnt(field, i, j);
                         if (friendCnt < 2) {
+                            // delete the potential tree at (i, j) if friendCnt < 2 
                             field[i][j] = '.';
+                            // run dfs to delete all invalid potential trees
+                            // adjacent to (i, j)
                             field = dfs(field, i, j);
                         }
                     }
