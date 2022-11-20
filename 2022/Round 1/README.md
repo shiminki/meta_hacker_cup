@@ -30,6 +30,7 @@ $$
 \end{alignat*}
 $$
 
-Since we can pre-calculate $X_{sum}$ in O(Q) time, this expression can be calculated in O(N + Q) time. We can apply the same logic for $\sum_{i = 1}^N \sum_{j = 1}^Q (B[i] - Y[j])^2$, and thus the overall algorithm takes O(N + Q) time.
+Since we can pre-calculate $X_{sum}$ in O(Q) time, this expression can be calculated in O(N + Q) time. We can apply the same logic for 
+$$\sum_{i = 1}^N \sum_{j = 1}^Q (B[i] - Y[j])^2$$, and thus the overall algorithm takes O(N + Q) time.
 
 
